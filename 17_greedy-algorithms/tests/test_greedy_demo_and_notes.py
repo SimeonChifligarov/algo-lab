@@ -1,13 +1,13 @@
-import os
 import sys
+from pathlib import Path
 
-sys.path.append(os.path.dirname(__file__))
+sys.path.append(str(Path(__file__).resolve().parents[1]))
 
 import io
 import unittest
 from contextlib import redirect_stdout
 
-from greedy_demo_and_notes import (
+from ..greedy_demo_and_notes import (
     activity_selection_demo,
     correctness_notes,
     fractional_knapsack_demo,
