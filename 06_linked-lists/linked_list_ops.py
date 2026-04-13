@@ -21,7 +21,10 @@ from __future__ import annotations
 
 from typing import Optional, TypeVar
 
-from linked_list_core import ListNode, linked_list_repr
+try:
+    from .linked_list_core import ListNode, linked_list_repr
+except ImportError:
+    from linked_list_core import ListNode, linked_list_repr
 
 T = TypeVar("T")
 

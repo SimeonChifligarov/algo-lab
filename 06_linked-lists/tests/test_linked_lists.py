@@ -19,7 +19,7 @@ THIS_DIR = Path(__file__).resolve().parent
 if str(THIS_DIR) not in sys.path:
     sys.path.insert(0, str(THIS_DIR))
 
-from linked_list_core import (
+from ..linked_list_core import (
     ListNode,
     build_linked_list,
     linked_list_to_list,
@@ -28,14 +28,14 @@ from linked_list_core import (
     tail_node,
     node_at,
 )
-from linked_list_ops import (
+from ..linked_list_ops import (
     reverse_list,
     merge_sorted_lists,
     remove_first_value,
     remove_all_values,
     remove_nth_from_end,
 )
-from linked_list_patterns import (
+from ..linked_list_patterns import (
     middle_node,
     has_cycle,
     cycle_entry,
