@@ -19,21 +19,21 @@ THIS_DIR = Path(__file__).resolve().parent
 if str(THIS_DIR) not in sys.path:
     sys.path.insert(0, str(THIS_DIR))
 
-from binary_search_core import (
+from ..binary_search_core import (
     binary_search,
     binary_search_recursive,
     first_occurrence,
     last_occurrence,
     count_occurrences,
 )
-from bounds import (
+from ..bounds import (
     lower_bound,
     upper_bound,
     equal_range,
     count_with_bounds,
     insert_position,
 )
-from parametric_search import (
+from ..parametric_search import (
     first_true,
     last_true,
     sqrt_floor,
