@@ -25,9 +25,9 @@ THIS_DIR = Path(__file__).resolve().parent
 if str(THIS_DIR) not in sys.path:
     sys.path.insert(0, str(THIS_DIR))
 
-from dag_core import DiGraph
-from topo_sort import topo_kahn, topo_dfs, is_dag, find_cycle
-from dag_dp import longest_path_dag, longest_path_dag_weighted
+from ..dag_core import DiGraph
+from ..topo_sort import topo_kahn, topo_dfs, is_dag, find_cycle
+from ..dag_dp import longest_path_dag, longest_path_dag_weighted
 
 
 def _is_valid_topo(order, edges) -> bool:

@@ -25,8 +25,14 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Dict, Hashable, List, Optional, Tuple, TypeVar
 
-from dag_core import DiGraph
-from topo_sort import topo_kahn
+try:
+    from .dag_core import DiGraph
+except ImportError:
+    from dag_core import DiGraph
+try:
+    from .topo_sort import topo_kahn
+except ImportError:
+    from topo_sort import topo_kahn
 
 T = TypeVar("T", bound=Hashable)
 

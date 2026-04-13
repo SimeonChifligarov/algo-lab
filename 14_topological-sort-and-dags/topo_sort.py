@@ -22,7 +22,10 @@ from collections import deque
 import heapq
 from typing import Deque, Dict, Hashable, List, Optional, Set, Tuple, TypeVar
 
-from dag_core import DiGraph
+try:
+    from .dag_core import DiGraph
+except ImportError:
+    from dag_core import DiGraph
 
 T = TypeVar("T", bound=Hashable)
 
