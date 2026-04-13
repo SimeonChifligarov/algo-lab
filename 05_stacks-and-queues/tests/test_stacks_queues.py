@@ -19,15 +19,15 @@ THIS_DIR = Path(__file__).resolve().parent
 if str(THIS_DIR) not in sys.path:
     sys.path.insert(0, str(THIS_DIR))
 
-from stack_basics import Stack, is_valid_brackets, simplify_path, eval_rpn
-from monotonic_stack import (
+from ..stack_basics import Stack, is_valid_brackets, simplify_path, eval_rpn
+from ..monotonic_stack import (
     next_greater_elements,
     next_greater_indices,
     daily_temperatures,
     largest_rectangle_area,
     stock_span,
 )
-from queue_basics import (
+from ..queue_basics import (
     Queue,
     CircularQueue,
     MovingAverage,
