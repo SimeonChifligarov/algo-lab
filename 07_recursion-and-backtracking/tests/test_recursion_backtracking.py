@@ -19,7 +19,7 @@ THIS_DIR = Path(__file__).resolve().parent
 if str(THIS_DIR) not in sys.path:
     sys.path.insert(0, str(THIS_DIR))
 
-from recursion_core import (
+from ..recursion_core import (
     recursive_sum,
     recursive_max,
     recursive_binary_search,
@@ -30,7 +30,7 @@ from recursion_core import (
     preorder_traversal,
     postorder_traversal,
 )
-from backtracking_subsets_perms import (
+from ..backtracking_subsets_perms import (
     subsets,
     subsets_with_dup,
     permutations,
@@ -38,7 +38,7 @@ from backtracking_subsets_perms import (
     combinations_n_choose_k,
     combination_sum,
 )
-from backtracking_constraints import (
+from ..backtracking_constraints import (
     solve_n_queens,
     generate_parentheses,
     word_exists,
