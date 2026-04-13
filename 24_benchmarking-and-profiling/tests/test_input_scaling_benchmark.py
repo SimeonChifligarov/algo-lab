@@ -8,7 +8,7 @@ sys.path.append(os.path.dirname(__file__))
 
 import unittest
 
-from input_scaling_benchmark import (
+from ..input_scaling_benchmark import (
     benchmark,
     binary_search,
     format_seconds,

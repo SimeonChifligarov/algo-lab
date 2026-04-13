@@ -8,7 +8,7 @@ sys.path.append(os.path.dirname(__file__))
 
 import unittest
 
-from algorithm_comparison import (
+from ..algorithm_comparison import (
     benchmark,
     binary_search,
     format_seconds,

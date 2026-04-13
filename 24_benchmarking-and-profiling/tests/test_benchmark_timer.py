@@ -8,7 +8,7 @@ sys.path.append(os.path.dirname(__file__))
 
 import unittest
 
-from benchmark_timer import (
+from ..benchmark_timer import (
     benchmark,
     format_seconds,
     sum_of_squares,

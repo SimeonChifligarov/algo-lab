@@ -13,7 +13,7 @@ import io
 import unittest
 from contextlib import redirect_stdout
 
-from cpu_and_memory_profiling import (
+from ..cpu_and_memory_profiling import (
     allocate_memory,
     fast_fibonacci,
     profile_cpu,
