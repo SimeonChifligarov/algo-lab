@@ -31,7 +31,7 @@ THIS_DIR = Path(__file__).resolve().parent
 if str(THIS_DIR) not in sys.path:
     sys.path.insert(0, str(THIS_DIR))
 
-from sorting_algorithms import (
+from ..sorting_algorithms import (
     insertion_sort,
     insertion_sort_in_place,
     selection_sort,
@@ -41,7 +41,7 @@ from sorting_algorithms import (
     merge_sort,
     quick_sort,
 )
-from non_comparison_sorts import counting_sort, radix_sort_lsd
+from ..non_comparison_sorts import counting_sort, radix_sort_lsd
 
 
 @dataclass(frozen=True)
