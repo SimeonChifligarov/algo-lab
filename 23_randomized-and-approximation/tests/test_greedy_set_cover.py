@@ -8,7 +8,7 @@ sys.path.append(os.path.dirname(__file__))
 
 import unittest
 
-from greedy_set_cover import greedy_set_cover, coverage_of
+from ..greedy_set_cover import greedy_set_cover, coverage_of
 
 
 class TestGreedySetCover(unittest.TestCase):

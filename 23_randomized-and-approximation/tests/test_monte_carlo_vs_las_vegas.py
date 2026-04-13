@@ -8,7 +8,7 @@ sys.path.append(os.path.dirname(__file__))
 
 import unittest
 
-from monte_carlo_vs_las_vegas import (
+from ..monte_carlo_vs_las_vegas import (
     estimate_pi,
     las_vegas_search,
 )

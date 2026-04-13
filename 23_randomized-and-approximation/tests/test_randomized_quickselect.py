@@ -8,7 +8,7 @@ sys.path.append(os.path.dirname(__file__))
 
 import unittest
 
-from randomized_quickselect import kth_smallest, randomized_quickselect
+from ..randomized_quickselect import kth_smallest, randomized_quickselect
 
 
 class TestRandomizedQuickselect(unittest.TestCase):
