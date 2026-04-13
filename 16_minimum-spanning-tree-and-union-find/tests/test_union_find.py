@@ -1,11 +1,11 @@
-import os
 import sys
+from pathlib import Path
 
-sys.path.append(os.path.dirname(__file__))
+sys.path.append(str(Path(__file__).resolve().parents[1]))
 
 import unittest
 
-from union_find import UnionFind
+from ..union_find import UnionFind
 
 
 class TestUnionFind(unittest.TestCase):
