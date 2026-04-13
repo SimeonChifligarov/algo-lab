@@ -1,11 +1,11 @@
-import os
 import sys
+from pathlib import Path
 
-sys.path.append(os.path.dirname(__file__))
+sys.path.append(str(Path(__file__).resolve().parents[1]))
 
 import unittest
 
-from prefix_function import prefix_function, lps_array
+from ..prefix_function import prefix_function, lps_array
 
 
 class TestPrefixFunction(unittest.TestCase):

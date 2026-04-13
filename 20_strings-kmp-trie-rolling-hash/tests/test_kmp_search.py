@@ -1,11 +1,11 @@
-import os
 import sys
+from pathlib import Path
 
-sys.path.append(os.path.dirname(__file__))
+sys.path.append(str(Path(__file__).resolve().parents[1]))
 
 import unittest
 
-from kmp_search import (
+from ..kmp_search import (
     build_lps,
     contains_pattern,
     count_occurrences,

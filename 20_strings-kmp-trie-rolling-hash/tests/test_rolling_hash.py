@@ -1,11 +1,11 @@
-import os
 import sys
+from pathlib import Path
 
-sys.path.append(os.path.dirname(__file__))
+sys.path.append(str(Path(__file__).resolve().parents[1]))
 
 import unittest
 
-from rolling_hash import (
+from ..rolling_hash import (
     RollingHash,
     contains_pattern_hash,
     count_occurrences_hash,
