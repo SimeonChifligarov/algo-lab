@@ -22,7 +22,10 @@ from __future__ import annotations
 
 from typing import Optional, TypeVar, Tuple
 
-from bst_core import BSTNode
+try:
+    from .bst_core import BSTNode
+except ImportError:
+    from bst_core import BSTNode
 
 T = TypeVar("T")
 

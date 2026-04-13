@@ -19,9 +19,9 @@ THIS_DIR = Path(__file__).resolve().parent
 if str(THIS_DIR) not in sys.path:
     sys.path.insert(0, str(THIS_DIR))
 
-from bst_core import BSTNode, build_bst, insert, search, inorder_values
-from bst_delete import delete
-from bst_queries import is_bst, lca_bst, kth_smallest, range_query
+from ..bst_core import BSTNode, build_bst, insert, search, inorder_values
+from ..bst_delete import delete
+from ..bst_queries import is_bst, lca_bst, kth_smallest, range_query
 
 
 class TestBSTCore(unittest.TestCase):

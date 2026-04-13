@@ -18,7 +18,10 @@ from __future__ import annotations
 
 from typing import List, Optional, TypeVar
 
-from bst_core import BSTNode, inorder_iter
+try:
+    from .bst_core import BSTNode
+except ImportError:
+    from bst_core import BSTNode
 
 T = TypeVar("T")
 
