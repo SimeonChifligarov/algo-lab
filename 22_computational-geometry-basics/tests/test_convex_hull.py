@@ -1,12 +1,12 @@
-import os
 import sys
+from pathlib import Path
 
-sys.path.append(os.path.dirname(__file__))
+sys.path.append(str(Path(__file__).resolve().parents[1]))
 
 import unittest
 
-from geometry_primitives import Point
-from convex_hull import (
+from ..geometry_primitives import Point
+from ..convex_hull import (
     convex_hull,
     convex_hull_vertices_only,
     convex_hull_with_boundary_points,
