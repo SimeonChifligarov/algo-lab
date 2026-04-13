@@ -1,11 +1,11 @@
-import os
 import sys
+from pathlib import Path
 
-sys.path.append(os.path.dirname(__file__))
+sys.path.append(str(Path(__file__).resolve().parents[1]))
 
 import unittest
 
-from bit_counting_and_power import (
+from ..bit_counting_and_power import (
     count_bits_upto,
     count_set_bits_builtin,
     count_set_bits_kernighan,

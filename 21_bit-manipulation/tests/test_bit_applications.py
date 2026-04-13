@@ -1,11 +1,11 @@
-import os
 import sys
+from pathlib import Path
 
-sys.path.append(os.path.dirname(__file__))
+sys.path.append(str(Path(__file__).resolve().parents[1]))
 
 import unittest
 
-from bit_applications import (
+from ..bit_applications import (
     BitFlags,
     find_missing_number,
     find_single_number,
