@@ -19,8 +19,8 @@ THIS_DIR = Path(__file__).resolve().parent
 if str(THIS_DIR) not in sys.path:
     sys.path.insert(0, str(THIS_DIR))
 
-from tree_core import build_tree_level_order, tree_to_level_order, TreeNode
-from tree_traversals import (
+from ..tree_core import build_tree_level_order, tree_to_level_order, TreeNode
+from ..tree_traversals import (
     preorder_recursive,
     inorder_recursive,
     postorder_recursive,
@@ -30,7 +30,7 @@ from tree_traversals import (
     level_order,
     level_order_levels,
 )
-from tree_utils import (
+from ..tree_utils import (
     size,
     height,
     invert,

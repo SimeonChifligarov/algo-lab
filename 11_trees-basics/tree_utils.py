@@ -20,7 +20,10 @@ from __future__ import annotations
 from collections import Counter, deque
 from typing import Deque, Optional, TypeVar, Generic, Tuple
 
-from tree_core import TreeNode
+try:
+    from .tree_core import TreeNode
+except ImportError:
+    from tree_core import TreeNode
 
 T = TypeVar("T")
 
