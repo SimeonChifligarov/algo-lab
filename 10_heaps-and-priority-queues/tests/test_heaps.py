@@ -26,9 +26,9 @@ THIS_DIR = Path(__file__).resolve().parent
 if str(THIS_DIR) not in sys.path:
     sys.path.insert(0, str(THIS_DIR))
 
-from min_heap import MinHeap
-from heap_patterns import top_k_largest, k_way_merge_sorted, RunningMedian
-from pq_wrappers import MaxHeap, PriorityQueue, heapq_top_k_largest, heapq_k_way_merge
+from ..min_heap import MinHeap
+from ..heap_patterns import top_k_largest, k_way_merge_sorted, RunningMedian
+from ..pq_wrappers import MaxHeap, PriorityQueue, heapq_top_k_largest, heapq_k_way_merge
 
 
 class TestMinHeap(unittest.TestCase):

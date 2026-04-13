@@ -20,7 +20,10 @@ import heapq
 from dataclasses import dataclass
 from typing import Generic, Iterable, List, Optional, Tuple, TypeVar
 
-from min_heap import MinHeap
+try:
+    from .min_heap import MinHeap
+except ImportError:
+    from min_heap import MinHeap
 
 T = TypeVar("T")
 

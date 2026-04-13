@@ -20,7 +20,10 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Iterable, Iterator, List, Optional, Sequence, Tuple
 
-from min_heap import MinHeap
+try:
+    from .min_heap import MinHeap
+except ImportError:
+    from min_heap import MinHeap
 
 
 # ----------------------------
