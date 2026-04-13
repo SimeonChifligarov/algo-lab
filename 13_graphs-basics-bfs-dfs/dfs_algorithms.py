@@ -20,7 +20,10 @@ from __future__ import annotations
 
 from typing import Dict, Hashable, List, Optional, Set, TypeVar
 
-from graph_core import Graph
+try:
+    from .graph_core import Graph
+except ImportError:
+    from graph_core import Graph
 
 T = TypeVar("T", bound=Hashable)
 

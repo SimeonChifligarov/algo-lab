@@ -19,7 +19,10 @@ from __future__ import annotations
 from collections import deque
 from typing import Deque, Dict, Generic, Hashable, List, Optional, Sequence, Tuple, TypeVar
 
-from graph_core import Graph
+try:
+    from .graph_core import Graph
+except ImportError:
+    from graph_core import Graph
 
 T = TypeVar("T", bound=Hashable)
 

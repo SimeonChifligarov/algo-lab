@@ -19,9 +19,9 @@ THIS_DIR = Path(__file__).resolve().parent
 if str(THIS_DIR) not in sys.path:
     sys.path.insert(0, str(THIS_DIR))
 
-from graph_core import Graph
-from bfs_shortest_path import bfs_parents, bfs_distances, bfs_shortest_path
-from dfs_algorithms import (
+from ..graph_core import Graph
+from ..bfs_shortest_path import bfs_parents, bfs_distances, bfs_shortest_path
+from ..dfs_algorithms import (
     dfs_reachable,
     connected_components,
     has_cycle_undirected,
