@@ -22,7 +22,10 @@ from __future__ import annotations
 
 from typing import Dict, Hashable, List, Optional, Tuple, TypeVar
 
-from weighted_graph import WeightedDiGraph
+try:
+    from .weighted_graph import WeightedDiGraph
+except ImportError:
+    from weighted_graph import WeightedDiGraph
 
 T = TypeVar("T", bound=Hashable)
 

@@ -25,9 +25,9 @@ THIS_DIR = Path(__file__).resolve().parent
 if str(THIS_DIR) not in sys.path:
     sys.path.insert(0, str(THIS_DIR))
 
-from weighted_graph import WeightedDiGraph
-from dijkstra import dijkstra_distances, dijkstra_shortest_path
-from bellman_ford import bellman_ford, bellman_ford_shortest_path
+from ..weighted_graph import WeightedDiGraph
+from ..dijkstra import dijkstra_distances, dijkstra_shortest_path
+from ..bellman_ford import bellman_ford, bellman_ford_shortest_path
 
 
 class TestDijkstra(unittest.TestCase):
