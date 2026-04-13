@@ -1,11 +1,11 @@
-import os
 import sys
+from pathlib import Path
 
-sys.path.append(os.path.dirname(__file__))
+sys.path.append(str(Path(__file__).resolve().parents[1]))
 
 import unittest
 
-from lcs_dp import build_lcs_table, lcs_length, lcs_string
+from ..lcs_dp import build_lcs_table, lcs_length, lcs_string
 
 
 class TestLCSDP(unittest.TestCase):

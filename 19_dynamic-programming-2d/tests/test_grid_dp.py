@@ -1,11 +1,11 @@
-import os
 import sys
+from pathlib import Path
 
-sys.path.append(os.path.dirname(__file__))
+sys.path.append(str(Path(__file__).resolve().parents[1]))
 
 import unittest
 
-from grid_dp import (
+from ..grid_dp import (
     build_min_path_sum_table,
     build_unique_paths_table,
     min_path_sum,

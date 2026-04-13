@@ -1,11 +1,11 @@
-import os
 import sys
+from pathlib import Path
 
-sys.path.append(os.path.dirname(__file__))
+sys.path.append(str(Path(__file__).resolve().parents[1]))
 
 import unittest
 
-from knapsack_and_edit_distance import (
+from ..knapsack_and_edit_distance import (
     build_edit_distance_table,
     build_knapsack_table,
     edit_distance,
