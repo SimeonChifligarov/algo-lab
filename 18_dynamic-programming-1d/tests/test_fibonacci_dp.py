@@ -1,11 +1,11 @@
-import os
 import sys
+from pathlib import Path
 
-sys.path.append(os.path.dirname(__file__))
+sys.path.append(str(Path(__file__).resolve().parents[1]))
 
 import unittest
 
-from fibonacci_dp import (
+from ..fibonacci_dp import (
     fibonacci_bottom_up,
     fibonacci_space_optimized,
     fibonacci_top_down,
