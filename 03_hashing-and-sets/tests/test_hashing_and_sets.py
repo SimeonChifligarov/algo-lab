@@ -21,7 +21,7 @@ THIS_DIR = Path(__file__).resolve().parent
 if str(THIS_DIR) not in sys.path:
     sys.path.insert(0, str(THIS_DIR))
 
-from hash_utils import (
+from ..hash_utils import (
     freq_map,
     most_common,
     first_unique,
@@ -34,8 +34,8 @@ from hash_utils import (
     contains_all,
 )
 
-from open_addressing_set import OpenAddressingHashSet
-from hash_patterns import (
+from ..open_addressing_set import OpenAddressingHashSet
+from ..hash_patterns import (
     two_sum_indices,
     group_anagrams,
     longest_consecutive,
