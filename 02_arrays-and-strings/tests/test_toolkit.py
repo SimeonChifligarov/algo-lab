@@ -22,9 +22,9 @@ THIS_DIR = Path(__file__).resolve().parent
 if str(THIS_DIR) not in sys.path:
     sys.path.insert(0, str(THIS_DIR))
 
-from array_ops import reverse_in_place, rotate_left_in_place, rotate_right_in_place
-from prefix_sums import PrefixSum, FenwickSum
-from string_utils import (
+from ..array_ops import reverse_in_place, rotate_left_in_place, rotate_right_in_place
+from ..prefix_sums import PrefixSum, FenwickSum
+from ..string_utils import (
     is_palindrome,
     are_anagrams,
     longest_common_prefix,
