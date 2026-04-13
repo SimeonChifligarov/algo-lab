@@ -19,7 +19,7 @@ THIS_DIR = Path(__file__).resolve().parent
 if str(THIS_DIR) not in sys.path:
     sys.path.insert(0, str(THIS_DIR))
 
-from two_pointers import (
+from ..two_pointers import (
     pair_sum_sorted,
     is_palindrome_two_pointers,
     remove_duplicates_sorted,
@@ -28,7 +28,7 @@ from two_pointers import (
     remove_element_stable,
 )
 
-from sliding_window import (
+from ..sliding_window import (
     max_sum_subarray_k,
     average_subarray_k,
     min_subarray_len_at_least,
@@ -36,7 +36,7 @@ from sliding_window import (
     longest_ones_after_replacement,
 )
 
-from patterns import (
+from ..patterns import (
     reverse_vowels,
     squares_sorted,
     container_with_most_water,
